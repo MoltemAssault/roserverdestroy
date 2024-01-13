@@ -1,0 +1,14 @@
+
+local kickmessage = "yourkickmessagehere"
+
+function KickAllPlayer()
+      for i, v in pairs(game:GetService("Players"):GetPlayers()) do
+             v:Kick("server nuked")
+      end
+end
+
+while true do
+wait(1) 
+        KickAllPlayer()
+        end
+end
